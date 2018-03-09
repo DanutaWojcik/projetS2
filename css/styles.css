@@ -1,0 +1,456 @@
+/*CSS reset*/
+*
+{
+  margin:0px;
+  padding:0px;
+  border:0px;
+  line-height:1.5em;
+  vertical-align:baseline;
+  text-decoration:none;
+  outline:0;
+}
+main{
+  display:block;
+}
+/*declaration des variables*/
+:root
+{
+  --marine:#223645;
+  --brique:#B83A1B;
+  --ciel:#DCDCDC;
+  --turquoise:#729179;
+  --blanc:#FFFAFA; 
+}
+body 
+{
+  background-color:snow;
+  font-size:14px;
+  color:var(--marine);
+  width:100%;
+  height:auto;
+  lettre-spacig:2px;
+  line-spacing:2px;
+} 
+/*les hyperliens+CSS transitions*/
+a
+{
+  font-size: 20px;
+  font-style: bold;  
+  color:var(--marine);
+  font-family:'Comfortaa', cursive;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 23px, color var(--brique);
+  transition-timing-function: linear;  
+}
+a:hover 
+{
+    font-size: 23px;
+    color:var(--brique);
+}
+/*visuel dans header*/
+div.v
+{
+  width:100%;
+  position:top;
+  display:inline;
+}
+#logo
+{
+  float: left;
+  display:inline-block;
+  width:15%;
+  height:auto;
+}
+#animation
+{
+  width:85%;
+  height:auto;
+  float:left;
+}
+/*menu principale*/
+#topmenu
+{
+  clear:both;
+  width:100%;
+  height:auto;
+  display:block;
+  font-style:bold;
+}
+ol 
+{
+  list-style-type:none;
+  background-color:var(--turquoise);
+  width:100%;
+  height:auto;
+}
+
+li{
+  display: inline;
+  padding: 1%;
+  height:auto;
+}
+li a 
+{
+  color:var(--marine);
+  text-align:left;
+  height:auto;
+  font-size: auto;
+  font-style: bold;
+}
+
+li a:hover 
+{
+  color:var(--brique);
+  height:auto;
+}
+li a:active 
+{
+  background-color:var(--blanc);
+  color:var(--turquoise);
+  height:auto;
+}
+/*les titres de niveau 1 + CSS transitions*/
+h1 
+{
+  font-size:30px;
+  font-family:'Comfortaa', cursive;
+  color:var(--blanc);
+  background-color:var(--marine);
+  margin: 1% 0 1% 0;
+  padding:0 0 0 1%;
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color var(--blanc), color var(--marine);
+  transition-timing-function: linear;  
+}
+h1:hover
+{
+  background-color: var(--blanc);
+  color:var(--marine);
+}
+/*article principal*/
+#a1
+{
+  display:inline-block;
+  width:56%;
+}
+/*visuel sur acceuil et les pages des cathegories*/
+.v1
+{
+  width:42%;
+  height:auto;
+  display:inline-block;
+  float:right;
+}
+.v1 img
+{
+  width:100%;
+  height: auto; 
+}
+/*les titres de nieveau2+CSS transitions*/
+h2
+{
+  background-color:var(--ciel);
+  font-family:'Comfortaa', cursive;
+  font-size: 18px;
+  padding:0 0 0 1%;
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color var(--marine), color var(--ciel);
+  transition-timing-function: linear;
+}
+h2:hover 
+{
+  background-color: var(--marine);
+  color: var(--ciel);
+}
+/*paragraphes*/
+p 
+{
+  font-size: 17px; 
+  font-family:'Expletus Sans', cursive;
+  padding:0 0 0 1%; 
+}
+/*gallerie avec resume des souspages*/
+div.v2
+{
+  clear:both;
+  width:auto;
+  margin-left:auto;
+  padding-left: 10%;
+}
+div.gallery 
+{
+  clear:both;
+  margin: 100px;
+  display:inline-block;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  
+}
+div.gallery:hover {
+  border: 1px solid var(--brique);
+}
+
+div.gallery img 
+{
+  width: 300px;
+  height: auto;
+  display:inline;
+}
+div.desc
+{
+  text-align: left;
+  font-family:'Neucha', cursive;
+  overflow: visible;
+  display:block;
+}
+/*span et footer*/
+span
+{ 
+  font-size: 18px; 
+  font-family:'Expletus Sans', cursive;
+  padding:0 0 0 1%; 
+}
+footer 
+{
+  display:block;
+  background-color:var(--turquoise);
+  font-size:12px;
+  font-family: 'Expletus Sans', cursive;
+  clear:both;
+  margin: 1% 0 1% 0;
+}
+/*lien pour les mentions dans footer*/
+a.mentions
+{
+  margin-left: 33%;
+  font-size: 12px;
+  text-align: center;
+}
+/*paragraphe dans footer*/
+#f
+{
+  font-size: 12px;
+}
+/*animation sur page d'accueil*/
+@keyframes slidy 
+{
+  0%  { left: 0%;}
+  10% {left: -10%;}
+  20% { left: -20%; }
+  25% { left: -25%; }
+  45% { left: -45%; }
+  50% { left: -50%; }
+  70% { left: -70%; }
+  75% { left: -75%; }
+  95% { left: -90%; }
+  100% {left: -100%; }
+}
+#animation 
+{ 
+  overflow: hidden; 
+}
+#animation figure img
+{
+  width: 20%;
+  float: left;
+}
+#animation figure 
+{ 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; 
+}
+/*aspect responsive*/
+@media(max-width:679px)
+{
+  span
+  {
+    display: block;
+    font-size:100%; 
+  }
+  h1
+  {
+    font-size: 100%;
+  }
+  h2
+  {
+    font-size: 100%;
+  }
+  a{
+    font-size: 20px;
+    font-style: bold;  
+    color:var(--marine);
+    font-family:'Comfortaa', cursive;
+    -webkit-transition: font-size 0.3s;
+    transition: font-size 15px, color var(--brique);
+    transition-timing-function: linear;  
+  }
+  a:hover 
+  {
+    font-size: 15px;
+    color: var(--brique);
+  }
+  ol 
+  {
+    height:100%;
+    width:100%;
+  }
+  li a {
+    height:100%;
+    width:100%;
+    font-size: 100%;
+  }
+  li 
+  {
+    display: block;
+    padding: 1%;
+    height:100%;
+    width:100%;
+  }
+  #topmenu
+  {
+    width:100%;
+    height:auto;
+  }
+  #a1 
+  {
+    display:block;
+    width: 100%;
+    height: 100%;
+    margin:0 0 0 0;
+  }
+  .v1 
+  {
+    display:block;
+    margin:0 0 0 0;
+    width:100%
+  }
+  .v1 img
+  {
+    width:100%;
+    height: auto; 
+  }
+
+  div.gallery
+  {
+    display:block;
+    width: 94%;
+    margin:0 0 0 0;
+    padding:0;
+  }
+  div.gallery img 
+  {
+    width: 100%;
+    height: auto;
+    display:inline-block;
+  }
+  div.desc 
+  {
+    width: 100%;
+    display:block;
+}
+  a.mentions
+  {
+    margin-left: 10%;
+  }
+}
+@media(min-width:680px) and (max-width:959px)
+{
+  span
+  {
+    display: block;
+    font-size:100%; 
+  }
+  h1
+  {
+    font-size: 100%;
+  }
+  h2
+  {
+    font-size: 100%;
+  }
+  a{
+    font-size: 20px;
+    font-style: bold;  
+    color:--marine;
+    font-family:'Comfortaa', cursive;
+    -webkit-transition: font-size 0.3s;
+    transition: font-size 15px, color var(--brique);
+    transition-timing-function: linear;  
+  }
+  a:hover 
+  {
+    font-size: 15px;
+    color: var(--brique);
+  }
+  ol 
+  {
+    height:100%;
+    width:100%;
+  }
+  a
+  {
+    font-size:50%;
+  }
+  li a 
+  {
+    height:100%;
+    width:100%;
+    font-size: 100%;
+  }
+  li {
+    display: block;
+    padding: 1%;
+    height:100%;
+    width:100%;
+  }
+  #topmenu
+  {
+    width:100%;
+    height:auto;
+  }
+  #a1 
+  {
+    display:block;
+    width: 100%;
+    height: auto;
+}
+  .v1 
+  {
+    display:block;
+    margin:0 0 0 0;
+    width:100%;
+  }
+  .v1 img
+  {
+    width:100%;
+    height: auto; 
+  }
+  div.gallery
+  {
+    display:block;
+    width: 94%;
+    margin:0 0 0 0;
+    padding:0;
+  }
+  div.gallery img 
+  {
+    width: 100%;
+    height: auto;
+    display:inline-block;
+  }
+  div.desc 
+  {
+    width: 100%;
+    display:block;
+  }
+  a.mentions
+  {
+    margin-left: 10%;
+  }
+} 

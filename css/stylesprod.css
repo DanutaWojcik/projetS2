@@ -1,0 +1,167 @@
+/*logo sur page de produit*/
+div.l
+{
+  width:auto;
+  height:auto;
+  position:top;
+}
+/*affichage d'heure*/
+#clock
+{
+  font-size: 25px; 
+  font-family:arial;
+  color: var(--marine);
+  display:inline;
+  margin-left: auto;
+  margin-right:auto;
+}
+/*affichage de lageur de page*/
+#width
+{
+  font-size: 25px; 
+  font-family:arial;
+  color: var(--marine);
+  display:inline;
+  margin-left: auto;
+  margin-right:auto;
+}
+#logo1
+  {
+  float: left;
+  display:inline-block;
+  width:15%;
+  height:auto;
+  }
+/*page d'impression*/
+.printme
+{
+
+  font-size: 70px;
+  background-color: var(--turquoise);
+  color: var(--ciel);
+  width: auto;
+  height: auto;
+  text-align: center;
+  border-radius:100px;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border:none;
+
+}
+.printme:hover
+{
+  background-color:var(--ciel);
+  color: var(--turquoise);
+  border:none;
+  shadow: bottom;
+}
+.printme:active
+{
+  background-color:var(--ciel);
+  color: var(--turquoise);
+  border:none;
+  shadow: bottom;
+}
+/*div avec des articles et images*/
+div.v3
+{
+  
+  width:100%;
+  height:auto;
+  margin:2% 0;
+  display: inline-block;
+}
+div.gallery1 
+{
+  margin:0 7%;
+  display:inline-block;
+  width: 15%;
+  height: 100%;
+}
+div.gallery1 img 
+{
+  width: 75%;
+  height: auto;
+  display:inline-block;
+  margin: 0 30%;
+}
+div.desc1
+{
+
+  text-align: justify;
+  font-family:'Neucha', cursive;
+  overflow: visible;
+  width: 150%;
+  display:block;
+}
+span.recette 
+{
+  text-align:center;
+  text-decoration:underline;
+  underline-color:var(--turquoise);
+}
+/*styles pour les ecrans des mobiles*/
+@media(max-width:679px)
+{
+  div.gallery1
+  
+{
+  margin:0 0 0 0;
+  display:block;
+  width: 100%;
+  height: auto;
+} 
+div.desc1
+{
+  width: 100%;
+  display:block;
+}
+div.gallery1 img 
+{
+  width: 50%;
+  height: auto;
+  display:inline-block;
+  margin: 0 25% 0 25%;
+}
+#clock
+{
+  font-size: 100%;
+}
+#width
+{
+  font-size: auto;
+}
+}
+@media(max-width:680px) and (max-width:959px)
+{
+  div.desc1
+{
+
+  width: 100%;
+  display:block;
+}
+  div.gallery1 
+{
+  margin:0;
+  display:block;
+  width: 100%;
+  height: auto;
+}
+div.gallery1 img 
+{
+  width: 50%;
+  height: auto;
+  display:inline-block;
+  margin: 0 25% 0 25%;
+}
+#clock
+{
+  font-size: 100%;
+}
+#width
+{
+  font-size: auto;
+}
+}

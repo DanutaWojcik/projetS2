@@ -1,0 +1,267 @@
+/*nom du site sur les pages des categories*/
+div.name
+{   
+  float:right;
+  font-size: 40px; 
+  font-family:'Expletus Sans', cursive;
+  color:var(--marine);
+  padding:3%;  
+}
+/*le formulaire*/
+p.form{
+  font-size: 14px;
+}
+#contact
+{
+  margin-right:5%;
+  font-family:'Expletus Sans', cursive;
+  width:50%;
+  height:100%;
+  display:inline-block;
+  font-size: 15px;
+  float:left;
+}
+#tchoice
+{
+  font-size:14px;
+  font-family:'Expletus Sans', cursive;
+  display:block;
+}
+#sujet
+{
+  height:auto;
+  font-size:14px;
+  display:inline-block;
+  width:auto; 
+}
+#message
+{
+  width:100%;
+  height:auto;
+  padding:0;
+  color:var(--marine);
+  font-family:'Expletus Sans', cursive;
+    
+}
+#name, #message, #email, #reponse
+{
+  background-color:var(--ciel);
+}
+/*les bouttons de formulaire de contact*/
+#clear
+{
+  width:30%;
+  heigh:auto;
+  text-align: center;
+  margin:0 auto 0 70%;
+  background-color:var(--ciel);
+  font-size: 12px;
+}
+#send
+{
+  width:100%;
+   heigh:auto;
+  text-align: center;
+  font-size: 18px;
+  background-color:var(--ciel);
+}
+#send:hover, #clear:hover
+{
+  background-color:var(--marine);
+  color: var(--ciel);
+}
+/*champs de resultat captcha*/
+#resultat
+{
+  width:45%;
+  heigh:auto;
+  text-align: center;
+  margin-left:3%;
+  margin-right: auto;
+  background-color:var(--ciel);
+}
+/*les champs de formulaire de contact*/
+input
+{
+  font-family:'Expletus Sans', cursive;
+  width:100%;
+  height:auto;
+  font-size: 15px;
+  color: var(--marine);
+  background-color:--ciel;
+}
+/*les chaps communicant des erreurs de sasie dan le formulaire de contact*/
+#erreur, #erreur1, #erreur2, #erreur3, #info
+{
+  font-size: 12px;
+  color: red;
+  display:visible;  
+}
+/* les champs pour captcha mathematique*/
+#chiffre1, #chiffre2
+{
+  color: red;
+  dislpay:inline;
+  style:bold;
+}
+#carte
+{
+  display:inline-block;
+  width:500px;
+  height:500px;
+}
+/*champ d'adresse sur la page contact.html*/
+p.adress
+{
+  font-family:'Expletus Sans', cursive;
+  width:auto;
+  height:100%;  
+}
+#adresse
+{
+  clear:both;
+  display:inline-block;
+  width: auto;
+  height:100%;
+  font-size:16px;
+  color: var(--marine);
+  text-align: justify;
+}
+/*message de confirmation d'envi dans fichier message.php*/
+#confirm
+{
+  width:100%;
+  heigh: auto;
+  font-family:'Expletus Sans', cursive;
+  font-size:16px; 
+  display:block;  
+}
+/*boutton retour sur le page de confirmation d'envoi de formulaire de contact*/
+#back{
+  display:block;
+}
+#retour
+{
+  font-size:auto;
+  color: var(--marine);
+  font-style:bold;
+  width:100%;
+  padding:1%;
+  height:auto;
+  background-color:var(--ciel);
+  border-radius:50px;
+  margin-left:40%;
+  margin-right: auto;
+  text-decoration:none;  
+}
+#retour:hover
+{
+  background-color:var(--marine);
+  font-size:auto;
+  color:var(--ciel);  
+}
+
+
+/*aspect responsive*/
+@media(max-width:679px)
+{
+label
+{
+  font-size:auto;
+}
+input
+{
+  width:100%;
+  height:auto;
+  font-size:auto;  
+}
+#contact
+{
+  width:100%;
+  height:auto;
+  display:block;
+}
+#adresse
+{
+  font-size:100%;
+  width:100%;
+}
+#message
+{
+  width:100%;
+  height:auto;
+}
+#send
+{
+  width:100%;
+  heigh:auto;
+}
+#clear
+{
+  font-size:auto;
+  width: auto;
+   margin:0 auto 0 51%;
+}
+#carte
+{
+  width:200px;
+  height:200px;
+  display: inline-block;
+  margin: 0 auto 0 10%;
+}
+div.name
+{   
+  font-size: 100%; 
+}
+}
+@media(min-width:680px) and (max-width:959px)
+{
+label
+{
+  font-size:auto;
+}
+input
+{
+  width:100%;
+  height:auto;
+  font-size: auto;
+}
+#adresse
+{
+  font-size:100%;
+  width:100%;
+}
+#contact
+{
+  width:100%;
+  height:auto;
+  display:block;
+}
+#message
+{
+  width:100%;
+  height:auto;
+}
+#send
+{
+  width:100%;
+  heigh:auto;
+}
+#clear
+{
+  font-size:auto;
+  width: auto;
+  margin:0 auto 0 67%;
+}
+#carte
+{
+  width:200px;
+  height:200px;
+  display: inline-block;
+   margin: 0 auto 0 51%;
+}
+div.name
+{  
+  font-size: 100%;  
+}
+}

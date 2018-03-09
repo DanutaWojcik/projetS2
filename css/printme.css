@@ -1,0 +1,71 @@
+/*la page d'impression*/
+body 
+{
+  background-color :#fff;
+  font-family :'Expletus Sans', cursive;
+  font-size :16pt;
+}
+#logo
+{
+	width: 25pt;
+	height: 25pt;
+	margin:0;
+}
+h2
+{
+	margin:0;
+	font-size :16pt;
+	font-family:'Expletus Sans', cursive;
+}
+#topmenu
+{ 
+  display:none;
+}
+footer
+{ 
+  display:none;
+}
+h1
+{
+ display:none;
+}
+
+div.v3
+{
+	width:120%;
+	height:auto;
+	margin:5pt;
+	font-size:15pt;
+	font-family: 'Expletus Sans', cursive;
+}
+div.desc1
+{
+
+    text-align:jutify;
+	width:150%;
+	display:inline-block;
+	font-size:15pt;
+	font-family:'Expletus Sans', cursive;
+
+}
+div.gallery1 
+{
+	margin:0pt;
+    display:inline;
+    width: 150%;
+	heigh: auto;
+	
+}
+div.gallery1 img 
+{
+    width: 100pt;
+    height: auto;
+	display:inline;
+	margin: 10pt;
+	
+}
+section
+{
+	
+	display:none;
+}
