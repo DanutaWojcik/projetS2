@@ -27,17 +27,17 @@
   <header>
 <!--affichage de logo--------------------------------------------------------------------------------------------------->
     <div class="l">
-      <a href="index.html"><img id="logo1" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"></a>
+      <a href="index.php"><img id="logo1" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"></a>
     </div>
 <!--affichage de date mise à jour===================================================-->
     <div id="clock"></div>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>				
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>			 
-        <li><a href="contact.html">Contactez-nous &#9993</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>				
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>			 
+        <li><a href="contact.php">Contactez-nous &#9993 </a></li>
       </ol>
     </nav>
   </header>
@@ -90,7 +90,7 @@
   <footer>
     <p id="f">
       Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a></p>
+      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a></p>
   </footer>
 <!--script pour mise à jour la  date===================================================-->
 <script type="text/javascript" src="js/date.js"></script>

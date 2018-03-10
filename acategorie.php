@@ -26,17 +26,17 @@
   <header>
 <!--affichage de logo et denom de site--------------------------------------------------------------------------------------------------->
     <div class="v">
-      <a href="index.html"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"/></a>
+      <a href="index.php"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"/></a>
       <div class="name">www.hdnc.fr</div>
     </div>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <br/>
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.html">Contactez-nous &#9993</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+        <li><a href="contact.php">Contactez-nous &#9993</a></li>
        </ol>
     </nav>
   </header>
@@ -75,7 +75,7 @@
       <nav>
         <div class="v2">
           <div class="gallery">
-            <a href="1aproduit.html" target="_blank">
+            <a href="1aproduit.php" target="_blank">
               <img src="images/baume.jpg" alt="Baume maison" width="400" height="auto"></img>
             </a>
             <span onclick="hideMe();" ><!--Appel fonction pour affiche/cacher description-->
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="gallery">
-            <a href="2aproduit.html" target="_blank">
+            <a href="2aproduit.php" target="_blank">
               <img src="images/cheveux1.jpg" alt="cheveux" width="400px" height="200px"></img>
             </a>
             <span onclick="hideMe1();" ><!--Appel fonction pour affiche/cacher description--->
@@ -107,7 +107,7 @@
   <footer>
     <p id="f">
       Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a>
+      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
     </p>
   </footer>
 <!--script pour afficher/masquer les descriptions des sous-cathegories--------------------------------------------------------------------------------------------------->

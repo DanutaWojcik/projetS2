@@ -26,17 +26,17 @@
   <header>
 <!--affichage logo et nom de site--------------------------------------------------------------------------------------------------->
     <div class="v">
-      <a href="index.html"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"></a>
+      <a href="index.php"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"></a>
       <div class="name">www.hdnc.fr</div>
     </div>
     <br/>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.html">Contactez-nous &#9993</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+        <li><a href="contact.php">Contactez-nous &#9993</a></li>
       </ol>
     </nav>
   </header>
@@ -72,7 +72,7 @@
       <nav>
         <div class="v2">
           <div class="gallery">
-            <a href="1bproduit.html" target="_blank">
+            <a href="1bproduit.php" target="_blank">
               <img src="images/frites.jpg" alt="plats salees" width="400" height="auto">
             </a>
             <span onclick="hideMe();">Les plats salés</span>
@@ -83,7 +83,7 @@
             </div>
           </div>
           <div class="gallery">
-            <a href="2bproduit.html" target="_blank">
+            <a href="2bproduit.php" target="_blank">
               <img src="images/Gateau1.jpg" alt="gateau" width="400px" height="200px">
             </a>
             <span onclick="hideMe1();">La patisserie</span><!--Appel fonction pour affiche/cacher description-->
@@ -101,7 +101,7 @@
   <footer>
     <p id="f">
       Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a>
+      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
     </p>
   </footer>
 <!--script pour afficher/masques les resumes des sous-articles--------------------------------------------------------------------------------------------------->

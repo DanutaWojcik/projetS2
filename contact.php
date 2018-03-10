@@ -30,10 +30,10 @@
 <!--menu==========================================================================================!-->
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.html">Contactez-nous &#9993 </a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+        <li><a href="contact.php">Contactez-nous &#9993 </a></li>
       </ol>
     </nav>
   </header>
@@ -104,7 +104,7 @@
   <footer>
     <p id="f">
       Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a>
+      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
     </p>
   </footer>
 <!--affichage de google maps==========================================================================================!-->

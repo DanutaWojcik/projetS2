@@ -26,7 +26,7 @@
   <header>
 <!--logo et bannerie==========================================================================================!-->
     <div class="v">
-        <a href="index.html"><img id="visuel" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
+        <a href="index.php"><img id="visuel" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
       <div id="animation">
         <figure>
           <img src="images/banneriedw.jpg" alt>
@@ -37,10 +37,10 @@
 <!--menu==========================================================================================!-->
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi!</a></li>
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.html">Contactez-nous &#9993</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi!</a></li>
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+        <li><a href="contact.php">Contactez-nous &#9993</a></li>
       </ol>
     </nav>
     </header>
@@ -69,7 +69,7 @@
               <strong>En cosmetique</strong>
               l’huile de coco HDNC est parfaite pour les <strong>cheveux</strong> secs, crépus ou 
               cassés. Privilégiez son utilisation en 
-              <a href="1aproduit.html" target="_blank">masque avant-shampoing</a>
+              <a href="1aproduit.php" target="_blank">masque avant-shampoing</a>
               L’huile de coco HDNC convient aussi à la peau. 
               Elle est parfaite surtout pour les peaux sèches et à celles souffrant d’eczéma. 
               Très vite absorbée par la <strong>peau</strong>, elle la nourrit et l’hydrate en profondeur sans laisser la couche grasse.
@@ -91,13 +91,13 @@
               <div class="gallery">
                 <a href="acategorie.html">
                   <img src="images/DIY.jpg" alt="Baume maison" >
-                    <span><a href="acategorie.html"> Les Cosmétiques à l'Huile de Coco à Faire Chez Soi</a></span>
+                    <span><a href="acategorie.php"> Les Cosmétiques à l'Huile de Coco à Faire Chez Soi</a></span>
                 <div class="desc">Preparez les cosmetiques chez vous! C'est facile!<br/>
                 <br/>
                 </div>
                 </div>
               <div class="gallery">
-                <a  href="bcategorie.html">
+                <a  href="bcategorie.php">
                   <img src="images/encuisine.jpg" alt="Cuisiner avec HDNC" width="400" height="auto">
                     <span><a href="bcategorie.html"> L'Huile de Noix Coco en Cuisine </a></span>
                 <div class="desc">Quelques recettes faciles et rapides. Laissez-vous surprendre, c'est bon...<br/><br/>
@@ -111,7 +111,7 @@
     <footer>
       <p id="f">
         Conception du site - Danuta Wojcik
-        <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a>
+        <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
       </p>
      </footer>
 </body>

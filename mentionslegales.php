@@ -26,15 +26,16 @@
 <!--menu prancipale--------------------------------------------------------------------------------------------------->
   <nav id="topmenu">
     <ol>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>
-      <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-      <li><a href="contact.html">Contactez-nous &#9993</a></li>
+      <li><a href="index.php">Accueil</a></li>
+      <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
+      <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+      <li><a href="contact.php">Contactez-nous &#9993</a></li>
     </ol>
   </nav>
 <!--mentions legales--------------------------------------------------------------------------------------------------->
   <p style="text-align:center"><strong>
-    <span style="color:#f00">Si vous utilisez nos Mentions Légales, vous vous engagez à laisser le lien  <u>Crédit :</u> <a href="http://www.generer-mentions-legales.com" target="_blank">www.generer-mentions-legales.com </a>
+    <span style="color:#f00">Si vous utilisez nos Mentions Légales, vous vous engagez à laisser le lien  <u>Crédit :</u> 
+    <a href="http://www.generer-mentions-legales.com" target="_blank">www.generer-mentions-legales.com </a>
     </span></strong></p>
   </header>
 

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <meta charset = 'utf-8'>
 <!--retour acceuil apres 50s---------------------------------------------------------------------------------------------------------->
-  <meta http-equiv="Refresh" content="50; url=index.html"/>
+  <meta http-equiv="Refresh" content="50; url=index.php"/>
   <!--[if lt IE 9]>
   <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
   <![endif]-->
@@ -26,15 +26,15 @@
   <header>
 <!--logo et bannerie==========================================================================================!-->
     <div class="v">
-        <a href="index.html"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
+        <a href="index.php"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
     </div>
 <!--menu==========================================================================================!-->
     <nav id="topmenu">
       <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.html">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.html">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.html">Contactez-nous &#9993</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
+        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
+        <li><a href="contact.php">Contactez-nous &#9993</a></li>
       </ol>
     </nav>
     </header>
@@ -72,7 +72,7 @@
       </br>
     </div>
     <div id="back">
-    <a id="retour" href="index.html">Retour accueil</a>
+    <a id="retour" href="index.php">Retour accueil</a>
     </div>
     </br>
   </main>
@@ -82,7 +82,7 @@
   <footer>
     <p id="f">
       Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.html" target="_blank"> Mentions légales</a>
+      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
     </p>
   </footer>
 <!--champ et script pour recuperation de l'heure de soumission de formulaire------------------------------------------------->
