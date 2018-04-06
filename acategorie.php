@@ -25,20 +25,12 @@
 <body>
   <header>
 <!--affichage de logo et denom de site--------------------------------------------------------------------------------------------------->
-    <div class="v">
-      <a href="index.php"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"/></a>
-      <div class="name">www.hdnc.fr</div>
+     <?php include ("inc/logo.php");?>
+      <div class="name">www.hdnc.online</div>
     </div>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <br/>
-    <nav id="topmenu">
-      <ol>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.php">Contactez-nous &#9993</a></li>
-       </ol>
-    </nav>
+    <?php include ("inc/menu.php");?>
   </header>
   <main>
     <header><h1> Les Cosmétiques l'Huile de Coco à Faire Chez Soi</h1></header>
@@ -104,12 +96,7 @@
     </section>
   </main>
 <!--footer--------------------------------------------------------------------------------------------------->
-  <footer>
-    <p id="f">
-      Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
-    </p>
-  </footer>
+  <?php include ("inc/footer.php");?>
 <!--script pour afficher/masquer les descriptions des sous-cathegories--------------------------------------------------------------------------------------------------->
 <script type="text/javascript" src="js/masquer.js"></script>
 </body>

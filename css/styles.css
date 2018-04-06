@@ -84,6 +84,7 @@ ol
   height:auto;
 }
 
+
 li{
   display: inline;
   padding: 1%;
@@ -109,7 +110,24 @@ li a:active
   color:var(--turquoise);
   height:auto;
 }
+li.connect{
+  background-color:var(--marine);
+  border-radius:50%;
+  width:15%;
+  height:auto;
+  display: inline;
+  font-style:bold;
+  color:var(--turquoise);
+  border:1px;
+  border-color:var(--turquoise);
+}
+li.connect:hover
+{
+  background-color: var(--blanc);
+  color:var(--marine);
+}
 /*les titres de niveau 1 + CSS transitions*/
+
 h1 
 {
   font-size:30px;

@@ -25,19 +25,10 @@
 <body>
   <header>
 <!--affichage de logo--------------------------------------------------------------------------------------------------->
-    <div class="l">
-      <a href="index.php"><img id="logo1" src ='images/kokos1.jpg'  alt = 'huile' tiltle  'hdnc' width="200px" height="200px"/></a>	
-    </div>
+     <?php include ("inc/logo.php");?>
     <br/>
 <!--menu principale--------------------------------------------------------------------------------------------------->
-    <nav id="topmenu">
-      <ol>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.php">Contactez-nous &#9993</a></li>
-      </ol>
-    </nav>
+    <?php include ("inc/menu.php");?>
   </header>
     <main>
 <!--Article avec les images--------------------------------------------------------------------------------------------------->
@@ -93,11 +84,6 @@
       </article>
     </main>
 <!--footer--------------------------------------------------------------------------------------------------->
-    <footer>
-      <p id="f">
-      Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
-      </p>
-    </footer>
+    <?php include ("inc/footer.php");?>
 </body>
 </html>

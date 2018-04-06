@@ -25,18 +25,9 @@
 <body>
   <header>
 <!--logo et bannerie==========================================================================================!-->
-    <div class="v">
-        <a href="index.php"><img id="logo" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
-    </div>
+<?php include("inc/logo.php")?>
 <!--menu==========================================================================================!-->
-    <nav id="topmenu">
-      <ol>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi</a></li>
-        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.php">Contactez-nous &#9993</a></li>
-      </ol>
-    </nav>
+    <?php include ("inc/menu.php");?>
     </header>
   <header>
     <h1> &#9993 Message envoyé </h1>
@@ -45,27 +36,8 @@
     <h2>Votre message</h2>
 <!--declaration et affichage des variables==========================================================================================!-->
     <div id="confirm" >
-      <?php 
-        $nom=$_GET['name'];
-        $email=$_GET['email'];
-        $phone=$_GET['phone'];
-        $sujet=$_GET['sujet'];
-        $message=$_GET['message'];
-        $email=$_GET['email'];
-        $send=$_GET['send'];
-	    ?>
-      <p><?php
-        echo 'Nom: ',$nom;
-      ?></p>
-      <p><?php
-        echo "Téléphone: " .$phone;
-      ?></p>
-      <p><?php
-        echo "Sujet: " ,$sujet;
-      ?></p>
-      <p><?php
-        echo "Votre message: ", $message;
-      ?></p>
+    <?php include ("inc/reception.php");?>
+       
       <!--heure envoi de formulaire!------------------------------------------------------------------------------>
       <h2>Merci de votre message, nous allons vous repondre dans les prochains delais.</h2>
       <p name="hour" id="hour"> </p> 
@@ -79,12 +51,7 @@
   </br>
   </br>
   </br>
-  <footer>
-    <p id="f">
-      Conception du site - Danuta Wojcik 
-      <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
-    </p>
-  </footer>
+  <?php include ("inc/footer.php");?>
 <!--champ et script pour recuperation de l'heure de soumission de formulaire------------------------------------------------->
 <script type="text/javascript" src="js/heure.js"></script>
 </body>

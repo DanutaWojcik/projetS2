@@ -1,4 +1,4 @@
-﻿<!Doctype html>
+<!Doctype html>
 <html lang="fr">
 <head>
   <title>Contact adresse HDNC</title>
@@ -26,54 +26,24 @@
 <body>
   <header>
 <!--affichage logo et nom du site--------------------------------------------------------------------------------------------------->
-<!--<?php include ("inc/logo.php");?>
+    <?php include ("inc/logo.php");?>
 <!--menu==========================================================================================!-->
     <?php include("inc/menu.php");?>
   </header>
   <main>
-    <h1>Contactez-nous &#9993 </h1>
+    <h1>Identifiez-vous </h1>
 <!--formulaire==========================================================================================!-->
-    <form id="contact"  action="message.php" method="GET" onsubmit="return valider();" onsubmit="return heure();">
+    <form id="login"  action="message.php" method="backoffice.php">
 <!--champ nom---->
-      <p class="form"><label for="name">Nom Prenom:</label>
+      <p class="form"><label for="name">Login:</label>
         <input type="text" name="name"  id="name"  autocomplete="off" autofocus />
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
         <div id="erreur"></div>
       </p>
-      <p class="form"><label for="phone">N° de téléphone:</label>
-        <input type="tel" name="phone" id="phone"  autocomplete="off"/>
+      <p class="form"><label for="password">Mot de passe:</label>
+        <input type="text" name="password" id="password"  autocomplete="off"/>
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
         <div id="erreur1"></div>
-      </p>
-<!--champ choix de sujet-->
-      <p class="form">
-        <label>Choisez le sujet de votre message:<br/>
-            <input type="radio" name="sujet" id="sujet" value="Demande de contact" checked>Demande de contact</input> 
-            <input type="radio" name="sujet" id="sujet" value="Demande d'information">Demande d'information</input> 
-            <input type="radio" name="sujet" id="sujet" value="Sujestion d'amelioration"> Sujestion d'amelioration</input><br/>
-            <input type="radio" name="sujet" id="sujet" value="Autre">Autre</input>
-      </p>        
-<!--champ message-->
-      <p class="form"><label for="message">Votre message:</label>
-        <textarea name="message" id="message" maxrows="10" maxcols="10"></textarea>
-<!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur2"></div>
-      </p>
-<!--champ e-mail-->
-      <p class="form"><label for="email">Votre e-mail:</label>
-        <input type="text" name="email" id="email" autocomplete="off" onblur="return captcha();" />
-<!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur3"></div>
-      </p>
-<!--captcha------------------------------------------------------------------------------------->
-      <p class="form"><strong>Pour verifiér si vous n'etez pas un robot, addictionez ces deux chiffres et verifiez le résultat:</strong><br/>
-        <span id="chiffre1"></span>
-        <span id="chiffre2"></span>
-        <input type="text" id="reponse" name="reponse"/>
-      </p>
-<!--commentaire de resultat de captcha---------------------------------------------------->
-      <div id="info"></div>
-<!--boutton envoi de formulaire!------------------------------------------------------------------------------>
       <p>
         <input type="reset" name="clear" id="clear" value="Effacer le formulaire"/><!--boutton efface folmulaire-->
       </p>

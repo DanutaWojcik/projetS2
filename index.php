@@ -6,8 +6,6 @@
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
   Facilites et des avantages d'utilisation du produit au quotidien. 
   Ce site est un site publicitaire à caractère informelle et ne contient des donnes médicales."/>
-  <html lang="fr"/>
-  <meta charset ='utf-8'/>
   <meta name="viewport" content="width=device-width">
   <!--[if lt IE 9]>
   <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -25,8 +23,7 @@
 <body>
   <header>
 <!--logo et bannerie==========================================================================================!-->
-    <div class="v">
-        <a href="index.php"><img id="visuel" src ='images/kokos1.jpg'  alt = 'huile' tiltle ='hdnc' width="200px" height="200px"/></a>
+     <?php include ("inc/logo.php");?>
       <div id="animation">
         <figure>
           <img src="images/banneriedw.jpg" alt>
@@ -35,14 +32,7 @@
     </div>
     </div>
 <!--menu==========================================================================================!-->
-    <nav id="topmenu">
-      <ol>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="acategorie.php">Les Cosmétiques à Faire Chez Soi!</a></li>
-        <li><a href="bcategorie.php">L'Huile de Noix Coco en Cuisine </a></li>
-        <li><a href="contact.php">Contactez-nous &#9993</a></li>
-      </ol>
-    </nav>
+    <?php include ("inc/menu.php");?>
     </header>
     <main>
 <!--article--------------------------------------------------------------------------------------------------->
@@ -89,7 +79,7 @@
           <nav>
             <div class="v2">
               <div class="gallery">
-                <a href="acategorie.html">
+                <a href="acategorie.php">
                   <img src="images/DIY.jpg" alt="Baume maison" >
                     <span><a href="acategorie.php"> Les Cosmétiques à l'Huile de Coco à Faire Chez Soi</a></span>
                 <div class="desc">Preparez les cosmetiques chez vous! C'est facile!<br/>
@@ -99,7 +89,7 @@
               <div class="gallery">
                 <a  href="bcategorie.php">
                   <img src="images/encuisine.jpg" alt="Cuisiner avec HDNC" width="400" height="auto">
-                    <span><a href="bcategorie.html"> L'Huile de Noix Coco en Cuisine </a></span>
+                    <span><a href="bcategorie.php"> L'Huile de Noix Coco en Cuisine </a></span>
                 <div class="desc">Quelques recettes faciles et rapides. Laissez-vous surprendre, c'est bon...<br/><br/>
                 </div>
               </div>
@@ -108,11 +98,6 @@
         </section>
     </main>
 <!--footer==========================================================================================!-->
-    <footer>
-      <p id="f">
-        Conception du site - Danuta Wojcik
-        <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
-      </p>
-     </footer>
+     <?php include ("inc/footer.php");?>
 </body>
 </html>
