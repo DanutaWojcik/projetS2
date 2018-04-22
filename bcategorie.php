@@ -1,6 +1,20 @@
 ﻿<!Doctype html>
+<?php 
+$cookie_name = "bienvenue_6";
+$cookie_value = "Bienvenue!!!";
+include("inc/cookie.php")
+?>
 <html lang="fr">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117524090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117524090-1');
+  </script>
   <meta charset ='utf-8'/>
   <title>L'Huile de Coco en Cuisine, recettes salees et patisserie</title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
@@ -24,8 +38,9 @@
 
 <body>
   <header>
-<!--affichage logo et nom de site--------------------------------------------------------------------------------------------------->
+<!--affichage logo et nom de site et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
+     <?php include("inc/cookie_show.php")?>
       <div class="name">www.hdnc.online</div>
     </div>
     <br/>
@@ -76,7 +91,7 @@
           </div>
           <div class="gallery">
             <a href="2bproduit.php" target="_blank">
-              <img src="images/Gateau1.jpg" alt="gateau" width="400px" height="200px">
+              <img src="images/gateau1.jpg" alt="gateau" width="400px" height="200px">
             </a>
             <span onclick="hideMe1();">La patisserie</span><!--Appel fonction pour affiche/cacher description-->
             <div class="desc" id="hide1">En fin c'est possible d'être gourmand et manger sain. 

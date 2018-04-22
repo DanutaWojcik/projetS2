@@ -34,11 +34,14 @@
   </header>
   <main>
     <h2>Votre message</h2>
-<!--declaration et affichage des variables==========================================================================================!-->
+<!--affichage de bdd==========================================================================================!-->
     <div id="confirm" >
-    <?php include ("inc/reception.php");?>
-       
-      <!--heure envoi de formulaire!------------------------------------------------------------------------------>
+      <?php include ("inc/reception.php");?>
+<!--bouttn de telechargement fichier csv==========================================================================================!-->
+      <p>
+        <a href="messages.csv" download><input type="button" id="download" clas="download" name="download" value="Télécharger fichier csv" /></a>
+      </p>  
+<!--heure envoi de formulaire!------------------------------------------------------------------------------>
       <h2>Merci de votre message, nous allons vous repondre dans les prochains delais.</h2>
       <p name="hour" id="hour"> </p> 
       </br>
@@ -51,6 +54,7 @@
   </br>
   </br>
   </br>
+<!--footer==========================================================================================!-->
   <?php include ("inc/footer.php");?>
 <!--champ et script pour recuperation de l'heure de soumission de formulaire------------------------------------------------->
 <script type="text/javascript" src="js/heure.js"></script>

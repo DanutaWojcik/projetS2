@@ -1,6 +1,21 @@
 <!Doctype html>
+<?php
+$cookie_name = "bienvenue";
+$cookie_value = "Bienvenue!!!"; 
+include("inc/cookie.php");
+?>
 <html lang='fr'>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117524090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117524090-1');
+  </script>
+
   <meta charset ='utf-8'/>
   <title>L'Huile de Coco comme superfood, recettes cuisine, recettes cosmetiques, DIY, patisserie, gommage </title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
@@ -22,8 +37,9 @@
 
 <body>
   <header>
-<!--logo et bannerie==========================================================================================!-->
+<!--logo, bannerie, cookies==========================================================================================!-->
      <?php include ("inc/logo.php");?>
+     <?php include("inc/cookie_show.php")?>
       <div id="animation">
         <figure>
           <img src="images/banneriedw.jpg" alt>
@@ -98,6 +114,6 @@
         </section>
     </main>
 <!--footer==========================================================================================!-->
-     <?php include ("inc/footer.php");?>
+    <?php include ("inc/footer.php");?>
 </body>
 </html>

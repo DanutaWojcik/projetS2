@@ -1,6 +1,20 @@
 ﻿<!Doctype html>
+<?php
+$cookie_name = "bienvenue_4";
+$cookie_value = "Bienvenue!!!";
+include("inc/cookie.php");
+?>
 <html lang="fr">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117524090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117524090-1');
+  </script>
   <meta charset = 'utf-8'>
   <title>La Patisserie gateau de chocolat, gateau citron, flocons d'avoine</title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
@@ -24,8 +38,9 @@
 </head>
 <body>
   <header>
-<!--logo et largeur de page--------------------------------------------------------------------------------------------------->
+<!--logo et largeur de page et cookies--------------------------------------------------------------------------------------------------->
     <?php include ("inc/logo.php");?>
+    <?php include("inc/cookie_show.php")?>
     <br/>
 <!--menu prancipale--------------------------------------------------------------------------------------------------->
     <?php include ("inc/menu.php");?>
@@ -37,7 +52,7 @@
         <h2> Les grandes classiques deviennent bons pour la santé!</h2>	
           <div class="v3">
             <div class="gallery1">
-              <img src="images/Gateau1.jpg" alt="moelleux au chocolat"/>
+              <img src="images/gateau1.jpg" alt="moelleux au chocolat"/>
                 <div class="desc1">
                   <span id="recette"><strong>Moelleux au chocolat au coco</strong></span><br/>
                     Battez 4 oeufs avec 200g de sucre. Ajoutez 100g de farine de ble ou de farine de noix de coco. Mélangez<br/>

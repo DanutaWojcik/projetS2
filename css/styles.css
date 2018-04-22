@@ -37,7 +37,7 @@ a
   font-size: 20px;
   font-style: bold;  
   color:var(--marine);
-  font-family:'Comfortaa', cursive;
+  font-family:'Arial', bold;
   -webkit-transition: font-size 0.3s;
   transition: font-size 23px, color var(--brique);
   transition-timing-function: linear;  
@@ -60,6 +60,13 @@ div.v
   display:inline-block;
   width:15%;
   height:auto;
+  border-radius:50px;
+}
+#cookie{
+  font-family:arial;
+  font-size:30px;
+  font-style:bold;
+  margin:0 0 0 80%;
 }
 #animation
 {
@@ -110,20 +117,31 @@ li a:active
   color:var(--turquoise);
   height:auto;
 }
-li.connect{
-  background-color:var(--marine);
-  border-radius:50%;
+#connect{
+  background-color:var(--blanc);
   width:15%;
   height:auto;
   display: inline;
   font-style:bold;
   color:var(--turquoise);
-  border:1px;
-  border-color:var(--turquoise);
+  padding:0.5%;
+  
 }
-li.connect:hover
+li.user{
+  background-color:var(--turquoise);
+  width:15%;
+  height:auto;
+  display: inline;
+  font-family:arial;
+  font-style:bold;
+  font-size:20px;
+  color:var(--marine);
+  padding:0;
+  
+}
+#connect:hover
 {
-  background-color: var(--blanc);
+  background-color: var(--turquoise);
   color:var(--marine);
 }
 /*les titres de niveau 1 + CSS transitions*/
@@ -249,6 +267,7 @@ a.mentions
 #f
 {
   font-size: 12px;
+  position: sticky;
 }
 /*animation sur page d'accueil*/
 @keyframes slidy 
@@ -303,7 +322,6 @@ a.mentions
     font-size: 20px;
     font-style: bold;  
     color:var(--marine);
-    font-family:'Comfortaa', cursive;
     -webkit-transition: font-size 0.3s;
     transition: font-size 15px, color var(--brique);
     transition-timing-function: linear;  
@@ -396,7 +414,6 @@ a.mentions
     font-size: 20px;
     font-style: bold;  
     color:--marine;
-    font-family:'Comfortaa', cursive;
     -webkit-transition: font-size 0.3s;
     transition: font-size 15px, color var(--brique);
     transition-timing-function: linear;  

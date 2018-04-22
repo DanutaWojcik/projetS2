@@ -1,6 +1,20 @@
 ﻿<!Doctype html>
+<?php
+$cookie_name = "bienvenue_5";
+$cookie_value = "Bienvenue!!!"; 
+include("inc/cookie.php"); 
+?>
 <html lang="fr">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117524090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117524090-1');
+  </script>
   <meta charset ='utf-8'/>
   <title>Les Cosmétiques à l'Huile de Coco à Faire Chez Soi</title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
@@ -24,8 +38,9 @@
 </head>
 <body>
   <header>
-<!--affichage de logo et denom de site--------------------------------------------------------------------------------------------------->
+<!--affichage de logo et de nom de site et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
+     <?php include("inc/cookie_show.php")?>
       <div class="name">www.hdnc.online</div>
     </div>
 <!--menu principale--------------------------------------------------------------------------------------------------->

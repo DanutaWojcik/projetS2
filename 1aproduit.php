@@ -1,6 +1,20 @@
 ﻿<!Doctype html>
+<?php
+$cookie_name = "bienvenue_1";
+$cookie_value = "Bienvenue!!!";
+ include("inc/cookie.php");
+?>
 <html lang="fr">
 <head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117524090-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117524090-1');
+  </script>
   <meta charset ='utf-8'/>
   <title>L'Huile De Noix Coco Pour le corps- DIY recettes pour les cosmétiques</title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
@@ -24,8 +38,9 @@
 </head>
 <body>
   <header>
-<!--affichage de logo--------------------------------------------------------------------------------------------------->
+<!--affichage de logo et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
+     <?php include("inc/cookie_show.php")?>
     <br/>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <?php include ("inc/menu.php");?>
@@ -60,7 +75,7 @@
                     Appliquez sur la peau propre et humide, et massez pendant quelques minutes.<br/>
                     Rincez et profitez de votre peau douce, ferme, hydratée et parfumée.
                     <br/>
-                    Utilisez ce gommage une fois par semaine.<br/><br/><br/><br/><br/><br/><br/><br/>
+                    Utilisez ce gommage une fois par semaine.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
               </div>
               <div class="gallery1">
@@ -73,7 +88,8 @@
                       Ils deviendront plus blanches, les tâches vont disparaitre et vos gencives seront en
                       plein forme grâce à 
                       <strong>l'huile HDNC.</strong><br/>
-                      <br/><br/><br/><br/><br/><br/><br/><br/>
+                      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                      <br/><br/>
                   </div>
                 </div>
               </div>
