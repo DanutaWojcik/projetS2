@@ -1,4 +1,7 @@
 ﻿<!Doctype html>
+<?php//commence session, ajoute cookies
+session_start();
+?>
 <?php
 $cookie_name = "bienvenue_2";
 $cookie_value = "Bienvenue!!!";
@@ -40,7 +43,7 @@ include("inc/cookie.php");
   <header>
 <!--affichage logo et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php")?>
+     <?php include("inc/cookie_show.php");?>      
     <br/>
 <!--menu principale--------------------------------------------------------------------------------------------------->
    <?php include ("inc/menu.php");?>
@@ -48,49 +51,7 @@ include("inc/cookie.php");
 <!--article--------------------------------------------------------------------------------------------------->
   <main>
     <article>
-      <h1> HDNC Dans Les Plats Salées</h1>
-        <h2> HDNC est très bonne pour la cuisson mais aussi pour les tartines</h2>
-          <div class="v3">
-            <div class="gallery1">
-              <img src="images/curry.jpg" alt="curry thai"/>
-                <div class="desc1">
-                  <span id="recette"><strong> Curry Thaï Rouge</strong></span><br/>
-                    Pour 4-5 personnes<br/>
-                    Faitez revenir une cuillère de curry rouge Thaï, sur une cuillère <strong>d'huile HDNC</strong>.
-                    Ajoutez 1kg de filet de poulet coupé en dés. Mélangez bien.<br/>
-                    Après environ 5 minutes, ajoutez dans le poulet le mélange de légumes asiatiques surgélés.
-                    Après 10 minutes, ajoutez 400ml de crème de coco et 2 à 4 c. à s. de sauce soja salée (selon le goût)<br/>
-                    Mélangez. C'est prêt!<br/>
-                    A servir avec le riz blanc.<br/>
-                    <br/><br/><br/>
-                </div>
-            </div>
-            <div class="gallery1">
-              <img src="images/frites.jpg" alt="frites"/>
-                <div class="desc1">
-                  <span id="recette"><strong>Les frites de potimarron</strong></span><br/>
-                    Pour environ 4 personnes<br>
-                    Lavez bien et videz (sans éplucher), le potimarron d'une taille moyenne.<br/>
-                    Coupez le en grosses frites.<br/>
-                    Prenez 1 c. à s.  <strong>d'huile coco HDNC</strong> mélangez avec 1 c. à c. d'ail en semoule,
-                    1 c. à c. de gros sel et 1 c. à c. d'épices 5 saveurs.<br/>
-                    Mélangez tout cela avecle potimarron, placez à plat sur une plaque de cuisson et enfournez à
-                    210°C (thermostat 7), chaleur tournante, pendant environ 20-25 minutes.<br/>
-                    Elle sont idéales pour accompagner les viandes grillées. 
-                </div>
-              </div>
-              <div class="gallery1">
-                <img src="images/tartine.jpg" alt="tartine"/>
-                  <div class="desc1"><span id="recette"><strong>Tartine à l'ognion rouge et tomate</strong></span><br/>
-                    Pour une tartine.<br/>
-                    Prenez une portion de votre pain favori (complèt de préfèrence). 
-                    Etalez bien une portion (quantité selon goût) <strong>d'huile de noix coco HDNC.</strong><br/>
-                    Coupez les tomates en tranches fines et l'ognion en demi-lunes très fines.<br/>
-                    Posez les tomates, puis les ognions sur votre tartine. Salez, poivrez et dégustez!
-                    <br/><br/><br/><br/><br/><br/>
-              </div>
-            </div>
-          </div>
+      <?php include ("inc/article1b.php");?>
     </article>
   </main>
 <!--footer--------------------------------------------------------------------------------------------------->

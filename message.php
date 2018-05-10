@@ -1,4 +1,7 @@
 ﻿<!Doctype html>
+<?php
+session_start();
+?>
 <html lang="fr">
 <head>
   <title>Confirmation envoi message</title>
@@ -7,8 +10,6 @@
   Ce site est un site publicitaire à caractère informelle et ne contient des donnes médicales"/>
   <meta name="viewport" content="width=device-width">
   <meta charset = 'utf-8'>
-<!--retour acceuil apres 50s---------------------------------------------------------------------------------------------------------->
-  <meta http-equiv="Refresh" content="50; url=index.php"/>
   <!--[if lt IE 9]>
   <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
   <![endif]-->
@@ -33,17 +34,18 @@
     <h1> &#9993 Message envoyé </h1>
   </header>
   <main>
-    <h2>Votre message</h2>
-<!--affichage de bdd==========================================================================================!-->
+    <h2>Message ok</h2>
+<!--affichage de bdd==========================================================================================-->
     <div id="confirm" >
-      <?php include ("inc/reception.php");?>
-<!--bouttn de telechargement fichier csv==========================================================================================!-->
-      <p>
-        <a href="messages.csv" download><input type="button" id="download" clas="download" name="download" value="Télécharger fichier csv" /></a>
-      </p>  
-<!--heure envoi de formulaire!------------------------------------------------------------------------------>
+      <?php //si utilisateur connecté
+       if(isset($_SESSION['session'])){include ("inc/reception.php");}?>
+<!--heure envoi de formulaire------------------------------------------------------------------------------>
       <h2>Merci de votre message, nous allons vous repondre dans les prochains delais.</h2>
-      <p name="hour" id="hour"> </p> 
+      <p name="hour" id="hour">
+      <?php          
+      echo "L'heure de reception de message ".date("h:i:sa"); 
+      ?> 
+      </p> 
       </br>
     </div>
     <div id="back">
@@ -54,9 +56,9 @@
   </br>
   </br>
   </br>
-<!--footer==========================================================================================!-->
+<!--footer==========================================================================================-->
   <?php include ("inc/footer.php");?>
 <!--champ et script pour recuperation de l'heure de soumission de formulaire------------------------------------------------->
-<script type="text/javascript" src="js/heure.js"></script>
+
 </body>
 </html>

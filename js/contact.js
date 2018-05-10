@@ -1,3 +1,4 @@
+//controle de formulaire
 window.document.getElementById("contact").onchange=valider;
 
 function valider(){

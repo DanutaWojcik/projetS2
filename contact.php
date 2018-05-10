@@ -1,4 +1,20 @@
 ﻿<!Doctype html>
+<?php//A FAIRE CONTROLE DE FORMULAIRE
+session_start();
+?>
+<?php
+if(isset($_GET['name'])&&isset($_GET['message'])&&isset($_GET['email'])){
+  $valide=true;
+  if((strlen<1)||(strlen>20)){
+   $valide=false;
+   $_SESSION['e_name']="sasie non correct";  
+  }
+  if($validate==true){
+    echo "validation correcte";
+    exit();
+  }
+}
+?>
 <?php
 $cookie_name = "bienvenue_7";
 $cookie_value = "Bienvenue!!!";
@@ -28,25 +44,32 @@ include("inc/cookie.php");
   <header>
 <!--affichage logo et cookies--------------------------------------------------------------------------------------------------->
     <?php include ("inc/logo.php");?>
-    <?php include("inc/cookie_show.php")?>
+    <?php include("inc/cookie_show.php");?>
 <!--menu==========================================================================================-->
     <?php include("inc/menu.php");?>
   </header>
   <main>
     <h1>Contactez-nous &#9993 </h1>
 <!--formulaire==========================================================================================-->
-    <form id="contact"  action="message.php" method="GET" onsubmit="return valider();" onsubmit="return heure();" >
-    <?php include("inc/error.php")?>
+    <form id="contact"  action="message.php" method="GET" onsubmit="return valider();" onsubmit="return heure();">
 <!--champ nom---->
       <p class="form"><label for="name">Nom Prenom:</label>
-        <input type="text" name="name"  id="name"  autocomplete="off" autofocus />
+        <input type="text" name="name"  id="name"  autocomplete="off" autofocus /> 
+      </p>
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur" name="erreur" ><?php include("inc/error.php")?></div>
+        <div id="erreur" name="erreur" >
+         <?php
+        if(isset($_SESSION['e_name'])){
+            echo $_SESSION['e_name'];
+            unset($_SESSION['e_name']);
+          }
+        ?>
+        </div>
       </p>
       <p class="form"><label for="phone">N° de téléphone:</label>
         <input type="tel" name="phone" id="phone"  autocomplete="off"/>
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur1" name="erreur"><?php include("inc/error.php")?></div>
+        <div id="erreur1" name="erreur"></div>
       </p>
 <!--champ choix de sujet-->
       <p class="form">
@@ -60,13 +83,13 @@ include("inc/cookie.php");
       <p class="form"><label for="message">Votre message:</label>
         <textarea name="message" id="message" maxrows="10" maxcols="10"></textarea>
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur2" name="erreur"><?php include("inc/error.php")?></div>
+        <div id="erreur2" name="erreur"></div>
       </p>
 <!--champ e-mail-->
       <p class="form"><label for="email">Votre e-mail:</label>
         <input type="text" name="email" id="email" autocomplete="off" onblur="return captcha();" />
 <!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur3" name="erreur"><?php include("inc/error.php")?></div>
+        <div id="erreur3" name="erreur"></div>
       </p>
 <!--captcha------------------------------------------------------------------------------------->
       <p class="form"><strong>Pour verifiér si vous n'etez pas un robot, addictionez ces deux chiffres et verifiez le résultat:</strong><br/>
@@ -75,7 +98,7 @@ include("inc/cookie.php");
         <input type="text" id="reponse" name="reponse"/>
       </p>
 <!--commentaire de resultat de captcha---------------------------------------------------->
-      <div id="info" name="erreur"><?php include("inc/error.php")?></div>
+      <div id="info" name="erreur"></div>
 <!--boutton envoi de formulaire!------------------------------------------------------------------------------>
       <p>
         <input type="reset" name="clear" id="clear" value="Effacer le formulaire"/><!--boutton efface folmulaire-->
@@ -83,7 +106,6 @@ include("inc/cookie.php");
       <p>
         <input type="submit" name="send" id="send" value="Envoyez"/>
       </p>
-      
     </form>
 <!--footer affiche google maps et l'adresse =====================-->
     <aside id="adresse"><h1>Adresse</h1>

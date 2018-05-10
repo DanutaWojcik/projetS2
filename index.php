@@ -1,5 +1,8 @@
 <!Doctype html>
 <?php
+session_start();
+?>
+<?php
 $cookie_name = "bienvenue";
 $cookie_value = "Bienvenue!!!"; 
 include("inc/cookie.php");
@@ -17,7 +20,7 @@ include("inc/cookie.php");
   </script>
 
   <meta charset ='utf-8'/>
-  <title>L'Huile de Coco comme superfood, recettes cuisine, recettes cosmetiques, DIY, patisserie, gommage </title>
+  <title>L'Huile de Coco comme superfood, recettes cuisine, recettes cosmetiques, DIY, patisserie, gommage, SPA maison </title>
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
   Facilites et des avantages d'utilisation du produit au quotidien. 
   Ce site est un site publicitaire à caractère informelle et ne contient des donnes médicales."/>
@@ -34,17 +37,16 @@ include("inc/cookie.php");
   |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank">
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
 </head>
-
 <body>
   <header>
 <!--logo, bannerie, cookies==========================================================================================!-->
      <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php")?>
       <div id="animation">
         <figure>
           <img src="images/banneriedw.jpg" alt>
           <img src="images/bannerie2dw.jpg" alt>
         </figure>
+      <?php include("inc/cookie_show.php");?>
     </div>
     </div>
 <!--menu==========================================================================================!-->

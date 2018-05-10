@@ -1,4 +1,7 @@
 ﻿<!Doctype html>
+<?php//commence session, ajoute cookies
+session_start();
+?>
 <?php
 $cookie_name = "bienvenue_3";
 $cookie_value = "Bienvenue!!!";
@@ -41,55 +44,14 @@ include("inc/cookie.php");
   <header>
 <!--affichage de logo et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php")?>
-<!--affichage de date mise à jour===================================================-->
-    <div id="clock"></div>
+     <?php include("inc/cookie_show.php");?>
 <!--menu principale--------------------------------------------------------------------------------------------------->
     <?php include ("inc/menu.php");?>
   </header>
 <!--article avec les images--------------------------------------------------------------------------------------------------->
   <main>
     <article>
-      <h1> HDNC pour les cheveux</h1>
-        <h2> Une recette, trois usages différentes...</h2>
-          <p>Mèlangez 2 c. à s.  <strong>d'huile HDNC</strong> avec 2 gouttes d'huile de ricin.
-            Utilisez cette préparation  en trois façons differentes, selon vos besoins.
-          </p>
-      <div class="v3">
-        <div class="gallery1">
-          <img src="images/cheveux1.jpg" alt="pointes en forme"/>
-          <div class="desc1">
-            <span id="recette"><strong>Un masque pour les pointes en plein forme</strong></span><br/>
-              Humidifiez les cheveux avec l'eau tiède et appliquez
-              le mélange <strong>d'huile HDNC</strong> avec l'huile de ricin,
-              jusqu’à ce qu’ils soient complètement recouverts.<br/>
-              Laissez agir pendant minimum une heure, puis lavez vos cheveux comme d'habitude.
-              Utilisez une fois par semaine. <br/><br/>
-          </div>
-        </div>
-        <div class="gallery1"> 
-          <img src="images/lissage.jpg" alt="lissage"/>
-          <div class="desc1">
-            <span id="recette"><strong>Pour les cheveux lisses</strong></span><br/>
-              Ce mélange <strong>d'huile HDNC</strong> et d'huile de ricin est un produit de lissage trés efficasse<br/>
-              Prenez simplement une goutte et chauffez dans vos mains, ensuite appliquez sur tout la chevelure, sauf sur les racines.<br/>
-              Brossez, séchez et profitez des cheveux douces et lisses.<br/>
-              <br/>
-          </div>
-        </div>
-        <div class="gallery1">
-          <img src="images/bouclettes.jpg" alt="bouclettes"/>
-          <div class="desc1">
-            <span id="recette"><strong>Pour discipliner les boucles</strong></span><br/>
-              Prennez une goutte de ce mélange <strong>d'huile HDNC</strong> 
-              et d'huile de ricin. Chauffez dans vos mains et
-              appliquez sur toute la chevelure sauf sur les racines.<br/>
-              Formez vos boucles et laissez sécher à l'air libre. Vos cheveux seront bien
-              nourris, les boucles bien définis et disciplinés.
-              <br/><br/>
-          </div>
-        </div>
-      </div>
+      <?php include ("inc/article2a.php");?>
     </article>
   </main>
 <!--footer--------------------------------------------------------------------------------------------------->

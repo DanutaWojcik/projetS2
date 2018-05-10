@@ -1,0 +1,15 @@
+User-agent : Googlebot
+Disallow : /contact.php/
+Disallow : /conexion.php/
+Disallow : /backoffice.php/
+Disallow : /articlemodif.php/
+Disallow : /apresmodif.php/
+
+User-agent : *
+Disallow : /contact.php/
+Disallow : /conexion.php/
+Disallow : /backoffice.php/
+Disallow : /articlemodif.php/
+Disallow : /apresmodif.php/
+
+Sitemap : http://www.hdnc.online/sitemap.xml

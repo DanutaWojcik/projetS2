@@ -1,11 +1,19 @@
 <!Doctype html>
-<?php include("inc/cookie.php")?>
+<?php
+session_start();
+$cookie_name = "bienvenue_9";
+$cookie_value = "Bienvenue!!!";
+include("inc/cookie.php");
+include("inc/cookie.php");
+if((isset($_SESSION['session']))&&($_SESSION['session']==true)){
+  header('Location:backoffice.php');
+  exit();
+  
+}?>
 <html lang="fr">
 <head>
-  <title>Contact adresse HDNC</title>
-  <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
-  Facilites et des avantages d'utilisation du produit au quotidien. 
-  Ce site est un site publicitaire à caractère informelle et ne contient des donnes médicales"/>
+  <title>Connexion backoffice</title>
+  <meta name="Description" content=""/>
   <meta name="viewport" content="width=device-width">
   <meta charset = 'utf-8'>
   <!--[if lt IE 9]>
@@ -25,39 +33,39 @@
 
 <body>
   <header>
-<!--affichage logo et nom du site--------------------------------------------------------------------------------------------------->
-    <?php include ("inc/logo.php");?>
-    <?php
-      if(!isset($_COOKIE[$cookie_name])) {
-        echo $cookie_value;
-    } else {
-         echo "";
-    }
-    ?>
+<!--affichage logo et cookie--------------------------------------------------------------------------------------------------->
+    <?php include("inc/logo.php");?>
+    <?php include("inc/cookie_show.php");?>
 <!--menu==========================================================================================!-->
     <?php include("inc/menu.php");?>
   </header>
   <main>
     <h1>Identifiez-vous </h1>
 <!--formulaire==========================================================================================!-->
-    <form id="login"  action="backoffice.php" method="GET">
+    <form id="login_form"  action="login.php" target="_blank" method="POST">
 <!--champ nom---->
-      <p class="form"><label for="name_ser">Login:</label>
-        <input type="text" name="name_user"  id="name_user"  autocomplete="off" autofocus />
-<!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur"></div>
+      <p class="form"><label for="login">Login:</label>
+        <input type="text" name="login"  id="login"  autocomplete="off" autofocus />
       </p>
       <p class="form"><label for="password">Mot de passe:</label>
-        <input type="text" name="password" id="password"  autocomplete="off"/>
-<!--commentaire d'erreur------------------------------------------------------------------------------------->
-        <div id="erreur1"></div>
+        <input type="password" name="password" id="password"  autocomplete="off"/>
       <p>
-        <input type="reset" name="clear" id="clear" value="Annuler"/><!--boutton efface folmulaire-->
+<!--boutton efface folmulaire-->
+        <input type="reset" name="clear" id="clear" value="Annuler"/>
       </p>
+<!--boutton d'envoi folmulaire-->
       <p>
         <input type="submit" name="send" id="send" class="send" value="Connexion"/>
       </p>
     </form>
+<!--commentaire d'erreur------------------------------------------------------------------------------------->
+    <div id="erreur">
+      <?php 
+      if(isset($_SESSION['error'])){//si sasie non correcte
+        echo $_SESSION['error'];
+      }
+      ?>
+    </div>
     <br/><br/><br/><br/><br/><br/>
    </main>
 <!--footer bas de page==========================================================================================!-->

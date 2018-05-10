@@ -1,0 +1,57 @@
+===Base de données cnam_projet
+
+== Structure de la table content
+
+|------
+|Colonne|Type|Null|Valeur par défaut
+|------
+|//**id_article**//|int(10)|Non|
+|title_article|varchar(255)|Non|
+|description_article|text|Non|
+== Déchargement des données de la table content
+
+|1|HDNC pour le corps|&lt;h1&gt;HDNC pour le corps&lt;/h1&gt;
+&lt;h2&gt; Trois recettes basiques pour votre bien-être...&lt;/h2&gt;
+            &lt;div class=&quot;v3&quot;&gt;
+              &lt;div class=&quot;gallery1&quot;&gt;
+                &lt;img src=&quot;images/baume.jpg&quot; alt=&quot;baume&quot;/&gt;
+                &lt;div class=&quot;desc1&quot;&gt;
+                  &lt;span id=&quot;recette&quot;&gt;&lt;strong&gt;Baume pour le corps multi-usage&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+                    Dans un bol, mélangez 4 c. à s. de &lt;strong&gt;HDNC&lt;/strong&gt; avec une demi c. à c. de miel.
+                    Transferez ce mélange dans un petit bocal vide et fermez-le.&lt;br/&gt;
+                    Utilisez ce mélange comme baume pour le corps, directement après la douche sur la peau humide.&lt;br/&gt;
+                    Parfait aussi comme crème de rassage. Ce mélange retarde la repousse des poils, est antiseptique 
+                    et protège la peau contre les irritations pendant et après le rassage.&lt;br/&gt;
+                    Votre peau est plus ferme, la cellulite et les vergitures diminuent.&lt;br/&gt;
+                    Trés bien aussi pour estomper les cicatrisses et pour accelérer la géurrison des bléssures et 
+                    des brûlures superficielles. &lt;br/&gt;
+                    Parfum très agréable...
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;gallery1&quot;&gt;
+                &lt;img src=&quot;images/scrub1.jpg&quot; alt=&quot;scrub&quot;/&gt;
+                &lt;div class=&quot;desc1&quot;&gt;
+                  &lt;span id=&quot;recette&quot;&gt;&lt;strong&gt;Gommage au café&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;
+                    Mélangez 1 c.à s.  &lt;strong&gt;d'huile de coco HDNC&lt;/strong&gt;&lt;br/&gt; avec 4 c.à s. 
+                    de sucre roux et 2 c.à s. de marc de café.&lt;br/&gt;
+                    Appliquez sur la peau propre et humide, et massez pendant quelques minutes.&lt;br/&gt;
+                    Rincez et profitez de votre peau douce, ferme, hydratée et parfumée.
+                    &lt;br/&gt;
+                    Utilisez ce gommage une fois par semaine.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;gallery1&quot;&gt;
+                &lt;img src=&quot;images/dentifrice1.jpg&quot; alt=&quot;dentifrice charbon&quot;/&gt;
+                  &lt;div class=&quot;desc1&quot;&gt;
+                    &lt;span id=&quot;recette&quot;&gt;&lt;strong&gt;Dentifrice blanchissant&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;
+                      Mélangez 1 c.à s.  &lt;strong&gt;d'huile de coco HDNC&lt;/strong&gt; avec 1 c. à c. de poudre de charbon 
+                      active trés fin. Brossez vos dents pendant quelques minutes, deux fois par semaine,
+                      avec cette melange.&lt;br/&gt;
+                      Ils deviendront plus blanches, les tâches vont disparaitre et vos gencives seront en
+                      plein forme grâce à 
+                      &lt;strong&gt;l'huile HDNC.&lt;/strong&gt;&lt;br/&gt;
+                      &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+                      &lt;br/&gt;&lt;br/&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;

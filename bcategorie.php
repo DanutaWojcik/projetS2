@@ -1,8 +1,9 @@
 ﻿<!Doctype html>
-<?php 
+<?php
+session_start();//commence session, ajoute cookies 
 $cookie_name = "bienvenue_6";
 $cookie_value = "Bienvenue!!!";
-include("inc/cookie.php")
+include("inc/cookie.php");
 ?>
 <html lang="fr">
 <head>
@@ -40,7 +41,7 @@ include("inc/cookie.php")
   <header>
 <!--affichage logo et nom de site et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php")?>
+     <?php include("inc/cookie_show.php");?>
       <div class="name">www.hdnc.online</div>
     </div>
     <br/>

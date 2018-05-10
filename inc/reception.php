@@ -1,37 +1,58 @@
-<?php /* fichier cnam/nfa017/inc/connexion.php - 20170503-PBO */
+<?php //DATE NE FONCTIONNE PAS
+/* fichier pour recuperer les donnes entrées dans le formulaire de contact */
   
-/* variables ==================================================== */
-    $bddname='cnam_projet';
-    //$bddname='id5248243_cnamprojet';
+/* variables  */
     $tablename='message';
     $requete="INSERT INTO `message` (`id_message`, `name`, `phone`, `name_message`, `content_message`, `email`) VALUES (NULL, '".$_GET['name']."', '".$_GET['phone']."', '".$_GET['sujet']."', '".$_GET['message']."', '".$_GET['email']."' )";//wysylam do bazy danych
-    $requete1="SELECT id_message, name, phone, name_message, content_message, email FROM message";  // wybieram dane z bazy o nazwie recette
+    $requete1="SELECT id_message FROM message";
+    $requete2="SELECT name FROM message";
+    $requete3="SELECT phone FROM message";
+    $requete4="SELECT name_message FROM message";
+    $requete5="SELECT content_message FROM message"; 
+    $requete6="SELECT email FROM message";    
    
-  /*variables de connexion ============= */
-    $serveur = 'localhost';$loginserveur = 'root';   $mdpserveur = ''; // variables connexion serveur    
-   //$serveur = 'localhost';$loginserveur = 'id5248243_root'; $mdpserveur = 'klopsik1';// variables connexion serveur    
-    
-    /* connexion */
-    $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;      // option pour capturer messages d'erreur
-    $pdo_options[PDO::MYSQL_ATTR_INIT_COMMAND] = 'SET NAMES utf8'; // option pour charset UTF-8
-    $con = new PDO('mysql:host='.$serveur.';dbname='.$bddname, $loginserveur, $mdpserveur, $pdo_options); 
+/*connexion avec bdd*/
+    require("inc/connect_bdd.php");
+/*variables pour préparer et executer la requete*/
     $resultat = $con->query($requete);
-    $resultat = $con->query($requete1);    // Pour préparer et executer la requete uzywam zmiennej polaczenia do odzyskania zmiennej requete
-
-    /* affichage */
-    
-     while($donnees = $resultat->fetch()){ // Boucle pour récupérer données de chaque enregistrement, dopoki otrzymujesz cos do zmiennej resultat, 
+    $resultat1 = $con->query($requete1);
+    $resultat2 = $con->query($requete2); 
+    $resultat3 = $con->query($requete3); 
+    $resultat4 = $con->query($requete4); 
+    $resultat5 = $con->query($requete5); 
+    $resultat6 = $con->query($requete6); 
+/*si utilisateur est connecté au backoffice, function afiche tous les messages de bdd dans tableu html  et envoie au fichier csv*/               
+function afficher($resultat0){
+  if(isset($_SESSION['session'])){
+      while(($donnees = $resultat0->fetch())){// Boucle pour récupérer données de chaque enregistrement,  
        $i=0;// numero du champ dans la requete 
-      foreach ($donnees as $don) {// Découper les données des champs de la ligne,
-        if(isset($donnees[$i])){
-         echo $donnees[$i].' | ';
-        $file=fopen("messages.csv","a");
-        fputcsv($file, explode('|',$donnees[$i]));
-        $i++;
-        //print_r(fgetcsv($file));
-        fclose($file);
-        } // Afficher chaque donnée puis séparateur i wyswietlic
-        
-      }
-      ?><br/><?php                      // Retour à la ligne à chaque enregistrement
-    }
+          foreach($donnees as $don) {// Découper les données des champs de la ligne,
+          if(isset($donnees[$i])){
+             echo $donnees[$i];
+             $file=fopen("messages.csv","a");
+             fputcsv($file, explode('|',$donnees[$i]));
+             $i++;// Afficher chaque donnée
+             fclose($file);
+          }
+        }
+        ?><br/><?php  //saute de ligne a chaque energistrement
+      }}
+      }?>
+      <table cellpadding="10px" cellspacing="1px" border="5px" border-color="black" border-style="solid" font-family="Expletus Sans">
+        <tr><th>No message</th><th>Nom Prenom</th> <th>Téléphone</th><th>Sujet de message</th><th>Message</th><th>email</th><th>Heure de reception message</th></tr>
+        <tr>
+          <td><?php afficher($resultat1);?></td>
+          <td><?php afficher($resultat2);?></td>
+          <td><?php afficher($resultat3);?></td>
+          <td><?php afficher($resultat4);?></td>
+          <td><?php afficher($resultat5);?></td>
+          <td><?php afficher($resultat6);?></td>
+          <td><?php date("h:i:sa");?></td>
+        </tr>
+      </table>;
+
+  <?php
+  //boutton de telechargement fichier csv-->  
+    if(isset($_SESSION['session'])){
+      echo '<p><a href="messages.csv" download><input type="button" id="download" clas="download" name="download" value="Télécharger fichier csv" /></a></p>';
+    }?>

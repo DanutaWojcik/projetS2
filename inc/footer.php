@@ -1,42 +1,28 @@
 <footer>
-      <p id="f">
-      Conception du site: 
-      <?php 
+  <p id="f">
+  Conception du site: 
+   <?php 
   
-/* variables ==================================================== */
-    $bddname='cnam_projet';
-    //$bddname='id5248243_cnamprojet';
+/* variables  et affichage des donnes de bdd==================================================== */
+ 
     $tablename='user';
-    $requete1="SELECT nom FROM user";  // wybieram dane z bazy o nazwie recette
+    $requete1="SELECT nom FROM user WHERE id_user=1 OR id_user=2";//selectione les donnes de bdd
    
-  /*variables de connexion ============= */
-    $serveur = 'localhost';  $loginserveur = 'root';   $mdpserveur = ''; // variables connexion serveur    
-    //$serveur = 'localhost';  $loginserveur = 'id5248243_root';   $mdpserveur = 'klopsik1'; // variables connexion serveur    
-    
-    /* connexion */
-    $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;     // option pour capturer messages d'erreur
-    $pdo_options[PDO::MYSQL_ATTR_INIT_COMMAND] = 'SET NAMES utf8'; // option pour charset UTF-8
-    $con = new PDO('mysql:host='.$serveur.';dbname='.$bddname, $loginserveur, $mdpserveur, $pdo_options); //
-    //$con = new PDO('mysql:host=localhost;dbname=cnam_projet', 'root', '');
-    $db = new PDO('mysql:host=localhost;dbname=cnam_projet', 'root', '', array(PDO::ATTR_PERSISTENT => true));//connection permanente
-   
-    
-    //$resultat = $con->query($requete);
-    $resultat = $con->query($requete1);    // Pour préparer et executer la requete uzywam zmiennej polaczenia do odzyskania zmiennej requete
+  /*connexion avec bdd*/
+    require("inc/connect_bdd.php");
+    $resultat = $con->query($requete1);// Pour préparer et executer la requete 
 
     /* affichage */
-     while($donnees = $resultat->fetch()) { // Boucle pour récupérer données de chaque enregistrement, dopoki otrzymujesz cos do zmiennej resultat, 
-      $i=0;                                // numero du champ dans la requete 
-      foreach ($donnees as $don) {         // Découper les données des champs de la ligne,
+     while($donnees = $resultat->fetch()) { // Boucle pour récupérer données de chaque enregistrement 
+      $i=0;
+      foreach ($donnees as $don) {         // Découper les données des champs de la ligne
         if(isset($donnees[$i])){echo $donnees[$i]." | ";
-
-        } // Afficher chaque donnée puis séparateur i wyswietlic
+        }// Afficher chaque donnée avec séparateur 
         $i++;
       }
-    // Retour à la ligne à chaque enregistrement
     }
     ?>
-        
+<!--lien vers mention legales-->
         <a class="mentions" href="mentionslegales.php" target="_blank"> Mentions légales</a>
       </p>
 </footer>

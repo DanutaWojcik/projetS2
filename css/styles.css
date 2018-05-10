@@ -62,7 +62,7 @@ div.v
   height:auto;
   border-radius:50px;
 }
-#cookie{
+div.cookie{
   font-family:arial;
   font-size:30px;
   font-style:bold;
@@ -305,6 +305,12 @@ a.mentions
 /*aspect responsive*/
 @media(max-width:679px)
 {
+  div.cookie{
+  font-family:arial;
+  font-size:14px;
+  font-style:bold;
+  margin:0 0 0 80%;
+}
   span
   {
     display: block;
@@ -397,6 +403,12 @@ a.mentions
 }
 @media(min-width:680px) and (max-width:959px)
 {
+  div.cookie{
+  font-family:arial;
+  font-size:15px;
+  font-style:bold;
+  margin:0 0 0 80%;
+}
   span
   {
     display: block;

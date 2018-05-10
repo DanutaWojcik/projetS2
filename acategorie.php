@@ -1,5 +1,6 @@
 ﻿<!Doctype html>
 <?php
+session_start();//commence session, ajoute cookies
 $cookie_name = "bienvenue_5";
 $cookie_value = "Bienvenue!!!"; 
 include("inc/cookie.php"); 
@@ -40,7 +41,7 @@ include("inc/cookie.php");
   <header>
 <!--affichage de logo et de nom de site et cookies--------------------------------------------------------------------------------------------------->
      <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php")?>
+     <?php include("inc/cookie_show.php");?>
       <div class="name">www.hdnc.online</div>
     </div>
 <!--menu principale--------------------------------------------------------------------------------------------------->

@@ -1,8 +1,8 @@
 <?php
-if(!isset($_GET["name_user"])){
-  echo "";
-}
-else{
-  echo "Bienvenue ".$_GET["name_user"];
-}
+  if (isset($_SESSION['login'])){
+    echo $_SESSION['login'];
+  }
+  else{
+    echo " ";
+  }
  ?>
