@@ -3,8 +3,7 @@
 session_start();
 ?>
 <?php
-$cookie_name = "bienvenue";
-$cookie_value = "Bienvenue!!!"; 
+$cookie_name = "bienvenue"; 
 include("inc/cookie.php");
 ?>
 <html lang='fr'>
@@ -30,27 +29,17 @@ include("inc/cookie.php");
   <![endif]--> 
 <!--feuilles des styles--------------------------------------------------------------------------------------------------->
   <link href="css/styles.css"  rel="stylesheet" type="text/css"/>
-<!--the google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank">
-  <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
 </head>
 <body>
   <header>
 <!--logo, bannerie, cookies==========================================================================================!-->
-     <?php include ("inc/logo.php");?>
       <div id="animation">
         <figure>
           <img src="images/banneriedw.jpg" alt>
           <img src="images/bannerie2dw.jpg" alt>
         </figure>
-      <?php include("inc/cookie_show.php");?>
-    </div>
-    </div>
-<!--menu==========================================================================================!-->
-    <?php include ("inc/menu.php");?>
+      </div>
+      <?php include("inc/header.php");?>
     </header>
     <main>
 <!--article--------------------------------------------------------------------------------------------------->

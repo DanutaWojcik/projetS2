@@ -1,9 +1,9 @@
 <div class="cookie"><?php
-      if(!isset($_COOKIE[$cookie_name])){//si cookie est instalé son valeur nes'afiche pas
-        echo $cookie_value; 
+      if(isset($cookie_name)){//si cookie est instalé son valeur nes'afiche pas
+        echo " "; 
       } 
       else {
-         echo " ";
+         echo $cookie_value;
     }
     ?>
 </div>

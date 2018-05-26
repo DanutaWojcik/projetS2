@@ -2,7 +2,6 @@
 <?php
 session_start();//commence session, ajoute cookies 
 $cookie_name = "bienvenue_6";
-$cookie_value = "Bienvenue!!!";
 include("inc/cookie.php");
 ?>
 <html lang="fr">
@@ -29,25 +28,15 @@ include("inc/cookie.php");
   <link href="css/stylescat.css" rel="stylesheet" type="text/css"/>
   <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 <!--the google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank"/>
+  
 <!--favicon--------------------------------------------------------------------------------------------------->
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
 </head>
 
 <body>
-  <header>
-<!--affichage logo et nom de site et cookies--------------------------------------------------------------------------------------------------->
-     <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php");?>
-      <div class="name">www.hdnc.online</div>
-    </div>
-    <br/>
-<!--menu principale--------------------------------------------------------------------------------------------------->
-    <?php include ("inc/menu.php");?>
-  </header>
+
+<!--header--------------------------------------------------------------------------------------------------->
+  <?php include ("inc/header.php");?>
   <main>
     <header><h1> L'Huile de Noix Coco en Cuisine</h1></header>
 <!--article--------------------------------------------------------------------------------------------------->

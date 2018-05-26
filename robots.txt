@@ -3,13 +3,15 @@ Disallow : /contact.php/
 Disallow : /conexion.php/
 Disallow : /backoffice.php/
 Disallow : /articlemodif.php/
-Disallow : /apresmodif.php/
+Disallow : /articleajout.php/
+Disallow : /mentionslegales.php/
 
 User-agent : *
 Disallow : /contact.php/
 Disallow : /conexion.php/
 Disallow : /backoffice.php/
 Disallow : /articlemodif.php/
-Disallow : /apresmodif.php/
+Disallow : /articleajout.php/
+Disallow : /mentionslegales.php/
 
 Sitemap : http://www.hdnc.online/sitemap.xml

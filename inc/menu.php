@@ -7,8 +7,8 @@
         <li><a href="contact.php">Contactez-nous &#9993</a></li>
         <li>
         <?php
-        if(!isset($_SESSION['login'])){//change valeur de button connexion  apres connection reussie
-          echo '<a href="connexion.php"><input type="button" id="connect" name="connect" value="Connexion"/></a><?php';
+        if(!isset($_SESSION['session'])){//change valeur de button connexion  apres connection reussie
+          echo '<a href="connexion.php"><input type="button" id="connect" name="connect" value="Connexion"/></a>';
         }
         else{
           echo '<a href="logout.php"><input type="button" id="connect" name="connect" value="Deconnexion"/></a>';
@@ -16,7 +16,7 @@
          </li> 
         <li class="user" name="user">
         <?php
-          if (isset($_SESSION['login'])){//afiche login d'utilisateur  apres la connection>
+          if (isset($_SESSION['session'])){//afiche login d'utilisateur  apres la connection>
             echo $_SESSION['login'];
           }
           else{

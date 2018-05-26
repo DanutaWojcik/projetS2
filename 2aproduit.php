@@ -4,7 +4,6 @@ session_start();
 ?>
 <?php
 $cookie_name = "bienvenue_3";
-$cookie_value = "Bienvenue!!!";
 include("inc/cookie.php");
 ?>
 <html lang="fr"/>
@@ -23,11 +22,6 @@ include("inc/cookie.php");
   <meta name="Description" content="L'huile de noix coco et ses bienfaits. 
   Facilites et des avantages d'utilisation du produit au quotidien. 
   Ce site est un site publicitaire à caractère informelle et ne contient des donnes médicales. Recettes DIY."/>
-<!--The google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank"/>
 <!--favicon--------------------------------------------------------------------------------------------------->
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
   <meta name="viewport" content="width=device-width">
@@ -42,11 +36,7 @@ include("inc/cookie.php");
 
 <body>
   <header>
-<!--affichage de logo et cookies--------------------------------------------------------------------------------------------------->
-     <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php");?>
-<!--menu principale--------------------------------------------------------------------------------------------------->
-    <?php include ("inc/menu.php");?>
+    <?php include("inc/header.php");?>
   </header>
 <!--article avec les images--------------------------------------------------------------------------------------------------->
   <main>

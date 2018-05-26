@@ -1,8 +1,7 @@
 ﻿<!Doctype html>
 <?php
 session_start();//commence session, ajoute cookies
-$cookie_name = "bienvenue_5";
-$cookie_value = "Bienvenue!!!"; 
+$cookie_name = "bienvenue_5"; 
 include("inc/cookie.php"); 
 ?>
 <html lang="fr">
@@ -29,24 +28,12 @@ include("inc/cookie.php");
 <!--feuilles des styles--------------------------------------------------------------------------------------------------->
   <link href="css/stylescat.css" rel="stylesheet" type="text/css"/>
   <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-<!--the google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank"/>
 <!--favicon--------------------------------------------------------------------------------------------------->
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
 </head>
 <body>
   <header>
-<!--affichage de logo et de nom de site et cookies--------------------------------------------------------------------------------------------------->
-     <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php");?>
-      <div class="name">www.hdnc.online</div>
-    </div>
-<!--menu principale--------------------------------------------------------------------------------------------------->
-    <br/>
-    <?php include ("inc/menu.php");?>
+    <?php include("inc/header.php");?>
   </header>
   <main>
     <header><h1> Les Cosmétiques l'Huile de Coco à Faire Chez Soi</h1></header>

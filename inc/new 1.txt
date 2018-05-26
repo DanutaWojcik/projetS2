@@ -1,0 +1,36 @@
+<!-- variables -------------*
+    $tablename='content';
+    $requette="INSERT INTO 'content','description_article' WHERE 'id_article=1' VALUES ('".$_GET['description_article1a']."') ";//wysylm do bazy danych
+    $modif1a="SELECT title_article FROM content WHERE id_article=1";
+    $modif1a_1="SELECT description_article FROM content WHERE id_article=1";
+    $modif2a="SELECT title_article FROM content WHERE id_article=2";
+    $modif2a_1="SELECT description_article FROM content WHERE id_article=2";
+    $modif1b="SELECT title_article FROM content WHERE id_article=3";
+    $modif1b_1="SELECT description_article FROM content WHERE id_article=3";
+    $modif2b="SELECT title_article FROM content WHERE id_article=4";
+    $modif2b_1="SELECT description_article FROM content WHERE id_article=4";
+
+    //$resultat = $con->query($requette);
+    $resultat1 = $con->query($modif1a);// Pour préparer et executer la requete
+    $resultat2 = $con->query($modif1a_1);
+    $resultat3 = $con->query($modif2a);
+    $resultat4 = $con->query($modif2a_1);
+    $resultat5 = $con->query($modif1b);
+    $resultat6 = $con->query($modif1b_1);
+    $resultat7 = $con->query($modif2b);
+    $resultat8 = $con->query($modif2b_1);
+    
+/*function pour afficher les resultats *   
+function afficher($resultat0){
+  if(isset($_SESSION['session'])){
+    /* affichage *
+      while(($donnees = $resultat0->fetch())){//||($donnees2 = $resultat2->fetch())||($donnees3 = $resultat3->fetch())||($donnees4 = $resultat4->fetch())||($donnees5 = $resultat5->fetch())||($donnees6 = $resultat6->fetch())){ // Boucle pour récupérer données de chaque enregistrement,  
+       $i=0;// numero du champ dans la requete 
+          foreach($donnees as $don) {// Découper les données des champs de la ligne,
+          if(isset($donnees[$i])){
+             echo $donnees[$i];
+             $i++;// Afficher chaque donnée
+          }
+        }
+       
+*/

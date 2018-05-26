@@ -39,22 +39,16 @@ function valider(){
     document.getElementById("contact").submit='none';
   }
 //controle de message
-  var regle = /[^{}%!]$/;/*condition de sasie*/
   var resultat = document.getElementById("message").value;/*recupere valeur de sasie*/
-  if (resultat.match(regle)) {/*Si sasie est valide*/
-    document.getElementById("message").style.border='3px solid yellowgreen';;
-    document.getElementById("message").style.backgroundColor='white';
-    document.getElementById("erreur2").innerHTML='';
-  }
-  else if (resultat==""){/*Si champ est non remplie*/
+  if (resultat==""){/*Si champ est non remplie*/
     document.getElementById("erreur2").innerHTML="Ce champ est obligatoire";
     document.getElementById("message").style.backgroundColor='pink';
     document.getElementById("contact").submit='none';
   }
   else{/*si champ est containt autres characteres que dans le regle*/
-    document.getElementById("erreur2").innerHTML="Le champ message ne dois pas contenir les signes suivantes: {, },!, %  ";
-    document.getElementById("message").style.backgroundColor='pink';
-    document.getElementById("contact").submit='none';
+    document.getElementById("message").style.border='3px solid yellowgreen';;
+    document.getElementById("message").style.backgroundColor='white';
+    document.getElementById("erreur2").innerHTML='';
   }
 //controle d'e-mail
   var regle = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;/*condition de sasie*/

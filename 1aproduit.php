@@ -4,7 +4,6 @@ session_start();
 ?>
 <?php
 $cookie_name = "bienvenue_1";//
-$cookie_value = "Bienvenue!!!";
  include("inc/cookie.php");
 ?>
 <html lang="fr">
@@ -22,11 +21,6 @@ $cookie_value = "Bienvenue!!!";
   <title>L'Huile De Noix Coco Pour le corps- DIY recettes pour les cosmétiques</title>
   <meta name="Description" content="Cosmetiques de l'huile de noix coco à faire chez soi DIY. 
   Recettes DIY, baume pour le  corps, gommage au cafe, dentifrice coco charbon."/>
-<!--the google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank"/>
 <!--favicon--------------------------------------------------------------------------------------------------->
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
   <meta name="viewport" content="width=device-width">
@@ -40,12 +34,7 @@ $cookie_value = "Bienvenue!!!";
 </head>
 <body>
   <header>
-<!--affichage de logo et cookies--------------------------------------------------------------------------------------------------->
-     <?php include ("inc/logo.php");?>
-     <?php include("inc/cookie_show.php");?>
-    <br/>
-<!--menu principale--------------------------------------------------------------------------------------------------->
-    <?php include ("inc/menu.php");?>
+    <?php include("inc/header.php");?>
   </header>
     <main>
 <!--Article avec les images--------------------------------------------------------------------------------------------------->

@@ -1,15 +1,13 @@
 <!Doctype html>
 <?php
 session_start();
+  /*if((isset($_SESSION['session']))&&($_SESSION['session']==true)){
+    header('Location:backoffice.php');
+    }*/
 $cookie_name = "bienvenue_9";
-$cookie_value = "Bienvenue!!!";
 include("inc/cookie.php");
 include("inc/cookie.php");
-if((isset($_SESSION['session']))&&($_SESSION['session']==true)){
-  header('Location:backoffice.php');
-  exit();
-  
-}?>
+?>
 <html lang="fr">
 <head>
   <title>Connexion backoffice</title>
@@ -22,27 +20,17 @@ if((isset($_SESSION['session']))&&($_SESSION['session']==true)){
 <!--feuilles des styles--------------------------------------------------------------------------------------------------->
   <link href="css/stylescat.css" rel="stylesheet" type="text/css"/>
   <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-<!--the google fonts--------------------------------------------------------------------------------------------------->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|
-  Architects+Daughter|Averia+Libre|Chelsea+Market|
-  Comfortaa:700|Expletus+Sans|Montserrat|Neucha|Pacifico
-  |Pangolin|Rajdhani|Reenie+Beanie|Sniglet" rel="stylesheet" target="_blank"/>
 <!--favicon--------------------------------------------------------------------------------------------------->
   <link rel="icon" type="image/png" href="images/kokosfavicon.png" />
 </head>
-
 <body>
   <header>
-<!--affichage logo et cookie--------------------------------------------------------------------------------------------------->
-    <?php include("inc/logo.php");?>
-    <?php include("inc/cookie_show.php");?>
-<!--menu==========================================================================================!-->
-    <?php include("inc/menu.php");?>
+    <?php include("inc/header.php");?>
   </header>
   <main>
     <h1>Identifiez-vous </h1>
 <!--formulaire==========================================================================================!-->
-    <form id="login_form"  action="login.php" target="_blank" method="POST">
+    <form id="login_form" action="login.php" target="_blank" method="GET">
 <!--champ nom---->
       <p class="form"><label for="login">Login:</label>
         <input type="text" name="login"  id="login"  autocomplete="off" autofocus />
@@ -70,8 +58,6 @@ if((isset($_SESSION['session']))&&($_SESSION['session']==true)){
    </main>
 <!--footer bas de page==========================================================================================!-->
   <?php include ("inc/footer.php");?>
-  
-
 <!--controle de formulaire de contact en js==========================================================================================!-->
   <script type="text/javascript" src="js/contact.js"></script>
 </body>
